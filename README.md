@@ -18,6 +18,7 @@ Sintaxis básica de Prolog.
 - [Listas](#listas).
 - [Ejemplos](#ejemplos).
  - [Problema 1](#problema-1).
+ - [Factorial recursivo](#factorial-recursivo).
 
 ## Conceptos basicos
 
@@ -320,5 +321,14 @@ obtenerPuntoCinco(Dia, Origen, Destino, Clima) :- obtenerPuntoTres(Dia, Origen, 
 obtenerPuntoSeis(Dia, Origen, Destino, Altitud, NumAsientos) :- vuelo(Origen, Destino, Matricula, Dia, _), 
 																ciudad(Destino, _, _, Altitud),
 																avion(Matricula, NumAsientos, _).
+
+```
+
+### Factorial recursivo
+
+```prolog
+
+factorial(0, 1).
+factorial(X, Y) :- 	X > 0, Xmenos1 is X - 1, factorial(Xmenos1, Z), Y is X * Z.
 
 ```
