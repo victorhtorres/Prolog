@@ -259,7 +259,7 @@ Cola = [2, 3, 4, 5].
 
 ### Problema 1
 
-Dado el siguiente [documento](images/problema-1.pdf), cree las reglas para las consultas solicitadas.
+Dado el siguiente [documento](image/problema-1.pdf), cree las reglas para las consultas solicitadas.
 
 Solución. Desarrollo de la base de conocimiento:
 
