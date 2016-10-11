@@ -35,7 +35,7 @@ Para el desarrollo de una base de conocimiento y de consultas, se puede utilizar
 
 Un predicado es cuando se afirma algo del sujeto o hablan del sujeto, por ejemplo: "Juan es alto". En la base de conocimiento de prolog, un predicado se denota así:
 
-```plain
+```prolog
 
 alto(juan). % José es alto.
 
@@ -56,7 +56,7 @@ true
 
 En Prolog, los hechos son predicados que prolog va asumir que son verdaderos. Ejemplo:
 
-```plain
+```prolog
 
 padreDe(juan, maria). % juan es padre de maria.
 
@@ -68,7 +68,7 @@ Una regla se define para confirmar si un hecho es o no es lo que dice afirmar. L
 
 Sintaxis:
 
-```plain
+```prolog
 
 cabeza(argumento1, ..., argumentoN) :- otrosHechos(argumento1, ..., argumentoN).
 
@@ -76,7 +76,7 @@ cabeza(argumento1, ..., argumentoN) :- otrosHechos(argumento1, ..., argumentoN).
 
 Ejemplo:
 
-```plain
+```prolog
 
 padre(juan, maria) :- hija(maria, juan). % Juan es padre de Maria, si Maria es hija de Juan.
 
@@ -87,7 +87,7 @@ El simbolo `:-` se lee como **si**.
 El cuerpo de las reglas pueden estar compuestas de operadores lógicos como el *AND*, que se representa con `,` y *OR*, que se representa con el `;`. Ejemplo:
 
 
-```plain
+```prolog
 
 abuelo(juan, pepe) :- hijo(pepe, pedro), padre(juan, pedro).
 % juan es abuelo de pepe, si pepe es hijo de pedro y juan es padre de pedro.
@@ -138,7 +138,7 @@ true
 
 Estas operaciones sólo se realizan por medio del operador `is`. Ejemplo:
 
-```plain
+```prolog
 
 % Reglas:
 % La variable Valor retorna el resultado de la operación.
@@ -207,7 +207,7 @@ Ejemplo: Recursividad de un número factorial.
 
 En la base de conocimiento:
 
-```plain
+```prolog
 
 factorial(0, 1).
 factorial(X, Y) :- 	X > 0,
