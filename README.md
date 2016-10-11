@@ -210,10 +210,7 @@ En la base de conocimiento:
 ```prolog
 
 factorial(0, 1).
-factorial(X, Y) :- 	X > 0,
-					          Xmenos1 is X - 1,
-						   		  factorial(Xmenos1, Z),
-						   		  Y is X * Z.
+factorial(X, Y) :- 	X > 0, Xmenos1 is X - 1, factorial(Xmenos1, Z), Y is X * Z.
 
 ```
 
