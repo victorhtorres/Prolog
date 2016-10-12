@@ -158,7 +158,7 @@ es_par(X) :- 0 is X mod 2. % retorna true o false si X es par o no.
 | ----- | ---- |
 | < | Menor que |
 | > | Mayor que |
-| <= | Menor o igual que |
+| =< | Menor o igual que |
 | >= | Mayor o igual que |
 
 
